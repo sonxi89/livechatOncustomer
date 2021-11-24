@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.scss";
 import { Button, Input, Image } from "antd";
 import {
   SearchOutlined,
@@ -10,14 +9,15 @@ import {
   InstagramOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons";
+import "./header.scss";
 
 const leftItemList = [
   "Kênh người bán",
   "Trở thành người bán Shopee",
   "Tải ứng dụng",
   "Kết nối",
-  <FacebookOutlined style={{fontSize : '17px', marginLeft: '-5px'}} />,
-  <InstagramOutlined style={{fontSize: '17px', marginLeft: '-5px'}} />,
+  <FacebookOutlined style={{ fontSize: "17px", marginLeft: "-5px" }} />,
+  <InstagramOutlined style={{ fontSize: "17px", marginLeft: "-5px" }} />,
 ];
 
 const rightItemList = [
