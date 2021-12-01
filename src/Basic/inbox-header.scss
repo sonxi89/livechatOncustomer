@@ -1,0 +1,23 @@
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.inbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left-header {
+    position: absolute;
+    right: 30px;
+     .input-header {
+        width: 100px;
+        height: 34px;
+        border-radius: 100px ;
+    }
+  }
+  
+}
