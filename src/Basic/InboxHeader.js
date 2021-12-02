@@ -44,8 +44,7 @@ function InboxHeader() {
             src="./img/notice.svg"
           />
           <img
-            className="margin-left-15"
-            style={{ width: "20px" }}
+            style={{ width: "20px", marginLeft: "15px" }}
             src="./img/icon-drag.svg"
           />
         </div>

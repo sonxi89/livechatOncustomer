@@ -16,7 +16,7 @@ function App() {
             overflow: "auto",
             minHeight: "100vh",
             position: "fixed",
-            left: 0,
+            left: "0",
           }}
         >
           <Sidebar />
@@ -32,16 +32,28 @@ function App() {
               height: "55px",
               lineHeight: "55px",
               borderBottom: "1px solid rgba(9,30,66,.12)",
-              padding: "0px 0px 0px 20px"
+              padding: "0px 0px 0px 20px",
             }}
           >
             <InboxHeader />
           </Header>
 
           <Content>
-            
+            <Layout>
+              <Sider
+                style={{
+                  height: "100vh",
+                  backgroundColor: "#fff",
+                  position: "relative",
+                  left: "65px",
+                  top: "55px",
+                }}
+              >
+                <ListContent />
+              </Sider>
+              <Content>Content</Content>
+            </Layout>
           </Content>
-
         </Layout>
       </Layout>
     </div>

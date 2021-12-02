@@ -1,57 +1,116 @@
 import React from "react";
 import { Menu } from "antd";
-import "./sidebar.scss";
 
-const SIDEBAR_TOP_LIST = [
+const MENU_LIST = [
   {
-    title: "Tổng quan",
-    icon: "./img/icon-dashboard.png",
+    icon: "./img/1.png",
+    name: "Thái Sơn",
+    number: "10",
   },
   {
-    title: "Inbox",
-    icon: "./img/icon-inbox.png",
+    icon: "./img/2.png",
+    name: "Quốc Anh",
+    number: "10",
   },
   {
-    title: "OnCustomer Live",
-    icon: "./img/icon-live.png",
+    icon: "./img/3.png",
+    name: "Tường Châu",
+    number: "10",
   },
   {
-    title: "Khách hàng",
-    icon: "./img/icon-people.png",
+    icon: "./img/4.png",
+    name: "Bach Nguyen",
+    number: "9",
   },
-];
+  {
+    icon: "./img/5.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/6.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/7.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/8.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/9.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
 
-const SIDEBAR_BOTTOM_LIST = [
   {
-    title: "Cài đặt",
-    icon: "./img/icon-setting.png",
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
+  },
+  {
+    icon: "./img/10.png",
+    name: "Thanh Hang",
+    number: "9",
   },
 ];
 
 function ListContent() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        height: "100vh",
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
-    >
-      <Menu mode="vertical" theme="dark">
-        <div className="logo"></div>
-        {SIDEBAR_TOP_LIST.map((item, index) => (
-          <Menu.Item>
-            <img src={item.icon} style={{ width: "18px" }} />
-          </Menu.Item>
-        ))}
-      </Menu>
-
-      <Menu mode="vertical" theme="dark">
-        {SIDEBAR_BOTTOM_LIST.map((item, index) => (
-          <Menu.Item>
-            <img src={item.icon} width={18} />
+    <div>
+      <Menu mode="vertical" theme="light">
+        {MENU_LIST.map((item, index) => (
+          <Menu.Item key={index}>
+            <img
+              src={item.icon}
+              style={{ width: "20px", borderRadius: "100%" }}
+            />
+            <div style={{ display: "inline-block", marginLeft: "10px" }}>
+              <span style={{ display: "inline-block", width: "100px" }}>
+                {item.name}
+              </span>
+              <span>{item.number}</span>
+            </div>
           </Menu.Item>
         ))}
       </Menu>

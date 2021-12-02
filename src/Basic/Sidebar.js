@@ -1,6 +1,6 @@
 import React from "react";
-import { Menu } from "antd";
 import "./sidebar.scss";
+import { Menu } from "antd";
 
 const SIDEBAR_TOP_LIST = [
   {
@@ -42,7 +42,7 @@ function Sidebar() {
       <Menu mode="vertical" theme="dark">
         <div className="logo"></div>
         {SIDEBAR_TOP_LIST.map((item, index) => (
-          <Menu.Item>
+          <Menu.Item className="menu-hover">
             <img src={item.icon} style={{ width: "18px" }} />
           </Menu.Item>
         ))}
@@ -50,8 +50,8 @@ function Sidebar() {
 
       <Menu mode="vertical" theme="dark">
         {SIDEBAR_BOTTOM_LIST.map((item, index) => (
-          <Menu.Item>
-            <img src={item.icon} width={18} />
+          <Menu.Item className="menu-hover">
+            <img className="icon-sidebar" src={item.icon} width={18} />
           </Menu.Item>
         ))}
       </Menu>
