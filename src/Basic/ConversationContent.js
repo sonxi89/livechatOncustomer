@@ -24,22 +24,7 @@ const CONVERSATION_LIST = [
   },
   {
     icon: "./img/5.png",
-    name: "Nguyễn Thị Thanh Hằng",
-    description: "đây là description của tôi",
-  },
-  {
-    icon: "./img/6.png",
-    name: "Nguyễn Thị Thu Thảo",
-    description: "đây là description của tôi",
-  },
-  {
-    icon: "./img/7.png",
-    name: "Triệu Thanh Tùng",
-    description: "đây là description của tôi",
-  },
-  {
-    icon: "./img/8.png",
-    name: "Nguyễn Thái Sơn",
+    name: "Nguyễn Văn Bách",
     description: "đây là description của tôi",
   },
 ];

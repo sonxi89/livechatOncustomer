@@ -5,3 +5,19 @@
   height: 56px;
   line-height: 56px;
 }
+
+.header-conversation-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(9,30,66,.12);
+  border-left: 1px solid rgba(9,30,66,.12) ;
+  border-right: 1px solid rgba(9,30,66,.12);
+  height: 56px;
+  line-height: 56px;
+  padding: 0px 15px 0px 10px ;
+  .custom-button {
+    padding: 0px 9px 0px 9px;
+    border-radius: 5px;
+    height: 36px;
+  }
+}

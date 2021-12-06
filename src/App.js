@@ -5,6 +5,7 @@ import InboxHeader from "./Basic/InboxHeader";
 import ListContent from "./Basic/ListContent";
 import ConversationHeader from "./Basic/ConversationHeader";
 import ConversationContent from "./Basic/ConversationContent";
+import ConversationDetailHeader from "./Basic/ConversationDetail";
 import "./app.css";
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -38,7 +39,15 @@ function App() {
                   <ConversationContent />
                 </Content>
               </Sider>
-              <Content>content</Content>
+              <Content>
+                <Header
+                  style={{ height: "56px" }}
+                  className="back-color-white padding-0"
+                >
+                  <ConversationDetailHeader />
+                </Header>
+                <Content></Content>
+              </Content>
               <Sider className="back-color-white"> right sider</Sider>
             </Layout>
           </Content>
