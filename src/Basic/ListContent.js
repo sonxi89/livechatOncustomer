@@ -97,13 +97,18 @@ const MENU_LIST = [
 
 function ListContent() {
   return (
-    <div>
+    <div style={{
+      height: 'calc(100vh - 55px)',
+      overflowY: 'scroll',
+      overflowX: 'hidden',
+    }}>
       <Menu mode="vertical" theme="light">
         {MENU_LIST.map((item, index) => (
           <Menu.Item key={index}>
             <img
               src={item.icon}
               style={{ width: "20px", borderRadius: "100%" }}
+              alt=""
             />
             <div style={{ display: "inline-block", marginLeft: "10px" }}>
               <span style={{ display: "inline-block", width: "100px" }}>

@@ -43,7 +43,7 @@ function Sidebar() {
         <div className="logo"></div>
         {SIDEBAR_TOP_LIST.map((item, index) => (
           <Menu.Item className="menu-hover">
-            <img src={item.icon} style={{ width: "18px" }} />
+            <img src={item.icon} style={{ width: "18px" }} alt="" />
           </Menu.Item>
         ))}
       </Menu>
@@ -51,7 +51,7 @@ function Sidebar() {
       <Menu mode="vertical" theme="dark">
         {SIDEBAR_BOTTOM_LIST.map((item, index) => (
           <Menu.Item className="menu-hover">
-            <img className="icon-sidebar" src={item.icon} width={18} />
+            <img className="icon-sidebar" src={item.icon} width={18} alt="" />
           </Menu.Item>
         ))}
       </Menu>

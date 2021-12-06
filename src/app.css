@@ -1,0 +1,20 @@
+.sider-inbox {
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.header-inbox {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(9,30,66,.12);
+  height: 55px;
+  line-height: 55px; 
+  padding-left: 20px;
+}
+
+.back-color-white {
+  background-color: #fff;
+}
+
+.padding-0 {
+  padding: 0px 0px !important;
+}

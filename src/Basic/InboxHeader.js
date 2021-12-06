@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Button, Input } from "antd";
+import { Button, Input } from "antd";
 import {
   PlusSquareOutlined,
   DownOutlined,
@@ -36,16 +36,18 @@ function InboxHeader() {
             placeholder="Tìm kiếm"
             prefix={<SearchOutlined />}
           />
-          <img className="margin-left-15" src="./img/social.svg" />
-          <img className="margin-left-15" src="./img/icon-phone-anser.svg" />
+          <img className="margin-left-15" src="./img/social.svg" alt="" />
+          <img className="margin-left-15" src="./img/icon-phone-anser.svg" alt="" />
           <img
             className="margin-left-15"
             style={{ width: "20px" }}
             src="./img/notice.svg"
+            alt=""
           />
           <img
             style={{ width: "20px", marginLeft: "15px" }}
             src="./img/icon-drag.svg"
+            alt=""
           />
         </div>
       </div>
